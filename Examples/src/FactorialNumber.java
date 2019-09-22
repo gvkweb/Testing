@@ -11,7 +11,7 @@ public class FactorialNumber {
 			f = f*i; 
 			
 		}
-		
+		System.out.println("hai");
 		System.out.println("hello");
 	System.out.println("final Value");
 	}

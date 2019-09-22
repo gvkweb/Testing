@@ -1,0 +1,74 @@
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+<label> Friut Names </label>
+<table id="tblFruits">
+    <tr>
+        <td><input id="chkMango" type="checkbox" value="1"/></td><td for="chkMango">Mango</td>
+    </tr>
+    <tr>
+        <td><input id="chkApple" type="checkbox" value="2"/></td><label for="chkApple">Apple</label>
+    </tr>
+    <tr>
+        <td><input id="chkBanana" type="checkbox" value="3"/></td><label for="chkBanana">Banana</label>
+    </tr>
+    <tr>
+        <td><input id="chkGuava" type="checkbox" value="4"/></td><label for="chkGuava">Guava</label>
+    </tr>
+    <tr>
+        <td><input id="chkOrange" type="checkbox" value="5"/></td><label for="chkOrange">Orange</label>
+    </tr>
+
+	
+	<button onclick="myFunction()">Click me!</button>
+ </table>
+
+ 
+ </body>
+ 
+ 
+ <script type="text/javascript">
+ 
+ function myFunction(){
+ 
+ var tableId = document.getElementById("tblFruits");
+ var checked = 0;
+ var chks = tableId.getElementsByTagName("INPUT");
+
+        for (var i = 0; i < chks.length; i++) {
+            if (chks[i].checked) {
+         
+		 var ff = chks[i].checked;
+		 var ss = $(ff).parent("td").next();
+		 var chkvalue = ss.val();
+		 	 var chkvaluez = ss.html();
+		 if(chkvalue == 'Mango')
+		 {
+		 
+		 alert("Helloo Mango Clicked");	
+		 }
+            }
+        } 
+		
+		if(checked == 0)
+		{
+		
+		alert("Please Select atleast one checkbox");
+		
+		}else {
+		
+		alert("Checkboxs are selected");
+		
+		}
+		
+		return false;
+   }
+ 
+ </script>
+ 
+ </html>

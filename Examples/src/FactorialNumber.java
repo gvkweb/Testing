@@ -11,9 +11,8 @@ public class FactorialNumber {
 			f = f*i; 
 			
 		}
-		System.out.println("through command");
-		System.out.println("line 2");
-	System.out.println("line1");
+		
+		System.out.println("hello");
 	System.out.println("final Value");
 	}
 
